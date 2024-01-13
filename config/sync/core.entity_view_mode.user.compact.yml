@@ -1,0 +1,13 @@
+uuid: d6b6b3ed-0dba-447e-b3fd-e85cb6dc7b6d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: TtD7OuGskOsQfoGyxXkrdtllBpR37J19d5BMQDZWJgA
+id: user.compact
+label: Компактний
+description: ''
+targetEntityType: user
+cache: true

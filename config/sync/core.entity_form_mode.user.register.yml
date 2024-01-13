@@ -1,0 +1,13 @@
+uuid: b378c70a-8bb4-4c1e-88bf-04be375ad8cb
+langcode: uk
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 5pE_4hurqtIlZN3XDi7eTo5RG13BMG0Rh9HYlRI3h8U
+id: user.register
+label: Реєстрація
+description: ''
+targetEntityType: user
+cache: true

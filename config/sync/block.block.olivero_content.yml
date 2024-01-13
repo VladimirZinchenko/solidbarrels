@@ -1,0 +1,22 @@
+uuid: 82b5805b-8562-4511-82b3-df9a30e2c8cc
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: olivero_content
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Основний вміст сторінки'
+  label_display: '0'
+  provider: system
+visibility: {  }
