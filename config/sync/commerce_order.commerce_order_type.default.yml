@@ -1,0 +1,17 @@
+uuid: 1ff2ff4b-eecb-47b7-bb35-7face3ee0162
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kYapI397yx2zFJGyDEs85Hyqgfc9jhmzxqPZMl2Fqhk
+id: default
+label: Базово
+traits: {  }
+locked: false
+workflow: order_default
+numberPattern: order_default
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''
+receiptSubject: ''

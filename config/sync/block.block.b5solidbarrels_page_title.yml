@@ -1,0 +1,20 @@
+uuid: 86026878-6856-44df-915c-cb315ead0cb5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: F8AHzYtQYNv7W2CBSZpMP_wW2H8naMMEbGpgplkw6JE
+id: b5solidbarrels_page_title
+theme: b5solidbarrels
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

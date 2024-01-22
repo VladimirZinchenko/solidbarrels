@@ -1,0 +1,22 @@
+uuid: 6fae114f-09dc-42ba-901b-9ecd291cf2f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: 6ikLVMmK1lCtuxUSRHoH9Nj-MqWyUss6tADqumhPPEI
+id: b5solidbarrels_messages
+theme: b5solidbarrels
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

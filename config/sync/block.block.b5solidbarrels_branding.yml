@@ -1,0 +1,25 @@
+uuid: 95ac4898-23fb-48b2-b481-8cae2066e89c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: rPDXRCtropRcp3XNTTzZ2BR-RMmA_bO5b2qBpbuWO18
+id: b5solidbarrels_branding
+theme: b5solidbarrels
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

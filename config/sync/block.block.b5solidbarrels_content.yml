@@ -1,0 +1,22 @@
+uuid: fab0bc82-229e-4e4f-a49c-32e6463025d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: TmWb3fTsQm9n8IFyhcK8oBvCDD6Xz4lv2v6_ScerzDE
+id: b5solidbarrels_content
+theme: b5solidbarrels
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

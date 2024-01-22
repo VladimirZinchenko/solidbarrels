@@ -1,0 +1,22 @@
+uuid: 8a348964-089c-40c2-851c-ce10084af0a6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: hB7a9yY6qUNg2GgXVbUH4rWEULLAeSEXdMjFX4uGNNU
+id: b5solidbarrels_local_tasks
+theme: b5solidbarrels
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

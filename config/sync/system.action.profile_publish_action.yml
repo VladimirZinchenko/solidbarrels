@@ -1,0 +1,16 @@
+uuid: b117903c-14b7-4080-8645-a5b60a1d1f91
+langcode: uk
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - profile
+_core:
+  default_config_hash: jjClImKlBhvh__KZnX6YkW_Kc1yZvqXODbUHt30A8z4
+id: profile_publish_action
+label: 'Publish selected profile'
+type: profile
+plugin: 'entity:publish_action:profile'
+configuration: {  }

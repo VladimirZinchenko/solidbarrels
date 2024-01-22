@@ -1,0 +1,8 @@
+uuid: 356e863b-6e5f-4b88-a9c8-7e63a2da21ff
+langcode: uk
+status: true
+dependencies: {  }
+id: T43qaxwUQWS5cOCpwG2tGLGOF5UzykA0K-mCFL6oRhs
+label: 'https://solidbarrels.ddev.site'
+context:
+  language: uk

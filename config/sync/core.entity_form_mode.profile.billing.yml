@@ -1,0 +1,16 @@
+uuid: ce663d53-403a-4890-ad39-7999de3c7ccc
+langcode: uk
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - commerce_order
+_core:
+  default_config_hash: yeGwCxbA5dBAS_3eBkfaVrbxkASEM357dkjPZShKiR4
+id: profile.billing
+label: Платежі
+description: ''
+targetEntityType: profile
+cache: true

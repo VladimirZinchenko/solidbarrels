@@ -1,0 +1,12 @@
+uuid: bae9cc82-6ef2-48f1-ad05-3c5f875fd1a2
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Вміст
+tags:
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'
+  canonical_url: '[node:url]'

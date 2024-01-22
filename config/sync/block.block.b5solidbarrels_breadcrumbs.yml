@@ -1,0 +1,22 @@
+uuid: 2dc5d0b5-1119-4533-bb0c-b4d45319518d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: lqO7eW0tcQykys8O62tYz2nfjBLgl5UajtDAUM6jXMY
+id: b5solidbarrels_breadcrumbs
+theme: b5solidbarrels
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

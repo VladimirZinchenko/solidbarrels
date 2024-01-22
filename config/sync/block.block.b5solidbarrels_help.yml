@@ -1,0 +1,22 @@
+uuid: e280fcb9-9939-4d2b-8392-d61b46711d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: Bjc7Dy06GVF1jGXCh49Wiqm0G8CoIlahWK4HSCaH87c
+id: b5solidbarrels_help
+theme: b5solidbarrels
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

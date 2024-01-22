@@ -1,0 +1,20 @@
+uuid: 86c36576-d5f0-4fa4-93e0-aca071f4afb9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: LmHWtpcaZkpPAZbkXwauMe1enxCGQBVc8K46xfmvtmg
+id: b5solidbarrels_local_actions
+theme: b5solidbarrels
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

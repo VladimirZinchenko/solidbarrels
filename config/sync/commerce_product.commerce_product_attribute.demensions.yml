@@ -1,0 +1,7 @@
+uuid: 12e672ef-0e82-4833-9bc2-5d5f9444a728
+langcode: uk
+status: true
+dependencies: {  }
+id: demensions
+label: demensions
+elementType: select

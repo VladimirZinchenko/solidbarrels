@@ -1,0 +1,27 @@
+uuid: fe109240-a1f9-4707-af05-ce7dc5e790f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b5solidbarrels
+_core:
+  default_config_hash: Hf1ct3v24cEHt4v3hJDrUiXU7z8n1I00U02WA5cWYSA
+id: b5solidbarrels_main_navigation
+theme: b5solidbarrels
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }
