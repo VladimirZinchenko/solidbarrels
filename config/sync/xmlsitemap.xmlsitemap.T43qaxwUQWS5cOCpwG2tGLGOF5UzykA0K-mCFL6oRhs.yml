@@ -3,6 +3,6 @@ langcode: uk
 status: true
 dependencies: {  }
 id: T43qaxwUQWS5cOCpwG2tGLGOF5UzykA0K-mCFL6oRhs
-label: 'https://solidbarrels.ddev.site'
+label: 'https://solidbarrels'
 context:
   language: uk

@@ -70,6 +70,7 @@ module:
   scss_compiler: 1
   xmlsitemap: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   claro: 0

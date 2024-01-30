@@ -1,14 +1,13 @@
-_core:
-  default_config_hash: kO5fDGTDu1JqYpxKrtzjdzwObU2Ko_3CxABNjqBbYos
-langcode: uk
 attributes:
-  class:
-    label: ''
-    description: ''
+  rel:
+    label: Relation
+    description: 'Set relation'
+  accesskey:
+    label: Accesskey
+    description: 'Set accesskey'
   target:
-    label: ''
-    description: ''
-    options:
-      _blank: 'New window (_blank)'
-      _self: 'Same window (_self)'
-    default_value: ''
+    label: Target
+    description: 'Set target'
+  class:
+    label: Class
+    description: 'Set class'

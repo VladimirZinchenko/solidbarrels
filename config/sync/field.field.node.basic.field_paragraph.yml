@@ -1,0 +1,25 @@
+uuid: b21583bb-730d-443c-b022-40b884f644dd
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.basic
+  module:
+    - entity_reference_revisions
+id: node.basic.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: basic
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+field_type: entity_reference_revisions

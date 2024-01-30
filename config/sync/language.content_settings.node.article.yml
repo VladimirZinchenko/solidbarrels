@@ -1,0 +1,11 @@
+uuid: 14231db1-9a55-4575-9313-a172ad137450
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article
+target_entity_type_id: node
+target_bundle: article
+default_langcode: site_default
+language_alterable: false

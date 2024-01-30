@@ -1,5 +1,5 @@
 uuid: fab0bc82-229e-4e4f-a49c-32e6463025d4
-langcode: en
+langcode: uk
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: 'Основний вміст сторінки'
   label_display: '0'
   provider: system
 visibility: {  }

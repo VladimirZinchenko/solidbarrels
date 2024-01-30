@@ -13,8 +13,6 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
-      - bold
-      - italic
       - strikethrough
       - superscript
       - subscript
@@ -24,61 +22,22 @@ settings:
       - '|'
       - bulletedList
       - numberedList
+      - alignment
       - '|'
+      - specialCharacters
       - blockQuote
       - drupalInsertImage
-      - insertTable
-      - horizontalLine
       - '|'
       - heading
-      - codeBlock
       - '|'
       - sourceEditing
   plugins:
-    ckeditor5_codeBlock:
-      languages:
-        -
-          label: 'Простий текст'
-          language: plaintext
-        -
-          label: C
-          language: c
-        -
-          label: 'C#'
-          language: cs
-        -
-          label: C++
-          language: cpp
-        -
-          label: CSS
-          language: css
-        -
-          label: Різниця
-          language: diff
-        -
-          label: HTML
-          language: html
-        -
-          label: Java
-          language: java
-        -
-          label: JavaScript
-          language: javascript
-        -
-          label: PHP
-          language: php
-        -
-          label: Пітон
-          language: python
-        -
-          label: Ruby
-          language: ruby
-        -
-          label: TypeScript
-          language: typescript
-        -
-          label: XML
-          language: xml
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading2
