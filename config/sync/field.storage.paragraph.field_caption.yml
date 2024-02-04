@@ -1,0 +1,19 @@
+uuid: ed087a02-e9d2-411c-9f81-b7dc712949c6
+langcode: uk
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_caption
+field_name: field_caption
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

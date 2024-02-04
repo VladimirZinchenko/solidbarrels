@@ -1,0 +1,27 @@
+uuid: e823f28c-506c-430b-bcab-b0447cf1d93f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.parallax
+  module:
+    - text
+id: paragraph.parallax.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: parallax
+label: caption
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<h2 class="display-3 text-align-center">Ipsum consequat nisl pretium</h2><p class="blockquote text-align-center">Tincidunt augue interdum velit euismod in pellentesque massa. Diam sollicitudin tempor id eu. Pellentesque sit amet porttitor eget dolor morbi non arcu.</p>'
+    format: full_html
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

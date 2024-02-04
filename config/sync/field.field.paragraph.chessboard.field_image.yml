@@ -1,0 +1,38 @@
+uuid: 4d6c0c89-8cea-488b-a196-d3b746ac358d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.chessboard
+  module:
+    - image
+id: paragraph.chessboard.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: chessboard
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: field/image/paragraph
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 71b5ca0e-4e5d-404f-bae8-b88a25c6baae
+    alt: 'About Solid Barrels'
+    title: ''
+    width: 1280
+    height: 960
+field_type: image

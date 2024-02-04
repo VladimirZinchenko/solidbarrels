@@ -1,0 +1,23 @@
+uuid: 7c7793c2-31de-4ac5-b55c-698d180343b3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bgcolor
+    - paragraphs.paragraphs_type.parallax
+  module:
+    - options
+id: paragraph.parallax.field_bgcolor
+field_name: field_bgcolor
+entity_type: paragraph
+bundle: parallax
+label: bgcolor
+description: 'Вибір кольору фону для тексту'
+required: true
+translatable: false
+default_value:
+  -
+    value: text_bg_light
+default_value_callback: ''
+settings: {  }
+field_type: list_string

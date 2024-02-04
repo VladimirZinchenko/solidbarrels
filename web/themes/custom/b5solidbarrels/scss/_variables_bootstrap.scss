@@ -2,3 +2,8 @@
 $form-text-margin-top: 0;
 $legend-font-size: 1rem;
 $table-cell-padding-x: .75rem;
+
+//##
+$enable-rounded: 			false !default;
+$breadcrumb-divider: 		quote("»") !default;
+$enable-negative-margins:	true !default;

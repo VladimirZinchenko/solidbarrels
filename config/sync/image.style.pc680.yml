@@ -1,0 +1,15 @@
+uuid: a8aa4328-0f5d-4932-96b3-628ee0642fad
+langcode: uk
+status: true
+dependencies: {  }
+name: pc680
+label: 'Paragraph Chessboard (680)'
+effects:
+  74187e68-04f3-4088-9cdc-71a21c61f2ee:
+    uuid: 74187e68-04f3-4088-9cdc-71a21c61f2ee
+    id: image_scale
+    weight: 1
+    data:
+      width: 680
+      height: null
+      upscale: false

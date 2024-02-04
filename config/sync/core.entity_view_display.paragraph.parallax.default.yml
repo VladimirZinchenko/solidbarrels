@@ -1,0 +1,52 @@
+uuid: a5617ab0-f9f8-4516-bfda-f965933195ce
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parallax.field_bgcolor
+    - field.field.paragraph.parallax.field_caption
+    - field.field.paragraph.parallax.field_image
+    - field.field.paragraph.parallax.field_text
+    - paragraphs.paragraphs_type.parallax
+  module:
+    - image
+    - options
+    - text
+id: paragraph.parallax.default
+targetEntityType: paragraph
+bundle: parallax
+mode: default
+content:
+  field_bgcolor:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_caption:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

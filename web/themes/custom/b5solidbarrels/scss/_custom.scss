@@ -1,0 +1,107 @@
+// Custom sccs.
+
+/*img.img-cover,
+.img-cover img {
+	object-fit: cover;
+	object-position: center center;
+	transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
+	height: 300px;
+	@include media-breakpoint-up(lg) {
+		height: 100%;
+	}
+}
+.img-cover .field--name-field-image {
+	height: inherit;
+}*/
+
+.img-cover {
+img,
+img.img-cover {
+	object-fit: cover;
+	object-position: center center;
+	transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
+	height: 300px;
+		@include media-breakpoint-up(lg) {
+			height: 100%;
+		}
+	}
+	.field--name-field-image {
+		height: inherit;
+	}
+}
+.card {
+	@include media-breakpoint-down(sm) {
+		margin-right: -1.25rem;
+		margin-left: -1.25rem;
+	}
+}
+
+.text-bg-dark,
+.text-bg-secondary {
+	::marker {
+		color: white;
+	}
+}
+
+.parallax {
+	background-attachment: fixed;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	@include media-breakpoint-up(lg) {
+		height: 600px;
+	}
+}
+.parallax-caption { 
+	padding: $spacer;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	p {
+		font-size: $h4-font-size;
+	}
+	@include media-breakpoint-up(lg) {
+		h2, h3 {
+					margin: 0;
+			& + p {
+				margin-top: ($spacer * 1.5);
+			}
+		}
+		p {
+			font-size: $h3-font-size;
+		}
+	}
+}
+.parallax-caption-content {
+	@include media-breakpoint-up(lg) {
+		width: 100%;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.parallax-description {
+	padding: ($spacer * 4) 0.75rem;
+	@include media-breakpoint-up(lg) {
+	}
+	p, ul {
+		font-size: $h5-font-size;
+		@include media-breakpoint-up(lg) {
+			font-size: $h4-font-size;
+		}
+	}
+}
+.parallax-description-content {
+	@include media-breakpoint-up(lg) {
+		width: 100%;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
