@@ -1,0 +1,18 @@
+_core:
+  default_config_hash: 6XRelHPjACQVOo9yRQMmbXt-ysCA2Pt6l762bxQQbdw
+langcode: uk
+exclude:
+  node:
+    article:
+      - body
+      - field_image
+      - field_paragraph
+      - field_tags
+    basic:
+      - body
+      - field_paragraph
+    page:
+      - body
+  paragraph: {  }
+text_to_prepend_to_title: 'Clone of'
+clone_status: false
