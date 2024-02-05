@@ -1,7 +1,6 @@
 // Custom sccs.
 
-/*img.img-cover,
-.img-cover img {
+.img-cover img, img.img-cover {
 	object-fit: cover;
 	object-position: center center;
 	transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
@@ -12,23 +11,8 @@
 }
 .img-cover .field--name-field-image {
 	height: inherit;
-}*/
-
-.img-cover {
-img,
-img.img-cover {
-	object-fit: cover;
-	object-position: center center;
-	transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
-	height: 300px;
-		@include media-breakpoint-up(lg) {
-			height: 100%;
-		}
-	}
-	.field--name-field-image {
-		height: inherit;
-	}
 }
+
 .card {
 	@include media-breakpoint-down(sm) {
 		margin-right: -1.25rem;
@@ -58,11 +42,9 @@ img.img-cover {
 	padding: $spacer;
 	color: #ffffff;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	height: inherit;
 	background-color: rgba(0, 0, 0, 0.3);
-	text-align: center;
 	p {
 		font-size: $h4-font-size;
 	}
@@ -78,7 +60,8 @@ img.img-cover {
 		}
 	}
 }
-.parallax-caption-content {
+.parallax-caption-content,
+.parallax-description-content {
 	@include media-breakpoint-up(lg) {
 		width: 100%;
 		max-width: 70%;
@@ -88,20 +71,10 @@ img.img-cover {
 }
 .parallax-description {
 	padding: ($spacer * 4) 0.75rem;
-	@include media-breakpoint-up(lg) {
-	}
 	p, ul {
 		font-size: $h5-font-size;
 		@include media-breakpoint-up(lg) {
 			font-size: $h4-font-size;
 		}
-	}
-}
-.parallax-description-content {
-	@include media-breakpoint-up(lg) {
-		width: 100%;
-		max-width: 70%;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
