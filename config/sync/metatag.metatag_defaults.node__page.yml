@@ -1,0 +1,8 @@
+uuid: 60708fe9-5473-4b5a-838b-25ed7757d458
+langcode: uk
+status: true
+dependencies: {  }
+id: node__page
+label: 'Вміст: Проста сторінка'
+tags:
+  robots: noindex
