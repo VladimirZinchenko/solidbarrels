@@ -30,9 +30,9 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: bd8cdb60-9a79-464e-ac9b-b5b3148d3437
     alt: 'About Solid Barrels'
     title: ''
-    width: 1280
-    height: 960
+    width: 1920
+    height: 858
 field_type: image
