@@ -124,7 +124,8 @@ set footer_classes = ' ' ~
 {% if page.footer %}
 <footer class="mt-auto {{ footer_classes }}">
   <div class="{{ b5_top_container }}">
-    {{ page.footer }}
+    {{ page.footer_top }}
+	{{ page.footer }}
   </div>
 </footer>
 {% endif %}

@@ -85,7 +85,9 @@ footer.footer-dark {
 		filter: invert(1);
 	}
 }
+
 footer .region-footer {
+	padding-top: 2rem;
 	@include media-breakpoint-up(md) {
 		display: flex;
 		flex-direction: row;

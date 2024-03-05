@@ -1,0 +1,25 @@
+uuid: 50f2fb78-190b-4e04-8791-db2382fb9dd2
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.footer-first
+  module:
+    - system
+  theme:
+    - b5solidbarrels
+id: b5solidbarrels_footerfirst
+theme: b5solidbarrels
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer-first'
+settings:
+  id: 'system_menu_block:footer-first'
+  label: 'Footer first'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

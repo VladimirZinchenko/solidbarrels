@@ -1,0 +1,8 @@
+uuid: 0017b60b-f1f5-4525-89b0-c21b00b52a4c
+langcode: uk
+status: true
+dependencies: {  }
+id: footer-first
+label: 'Footer first'
+description: ''
+locked: false
