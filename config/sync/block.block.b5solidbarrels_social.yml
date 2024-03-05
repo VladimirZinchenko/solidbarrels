@@ -1,0 +1,25 @@
+uuid: d4540395-2965-4832-87a0-fc4c4499fe47
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:320a1bb8-f45d-4c10-8b75-4039770c17ba'
+  module:
+    - block_content
+  theme:
+    - b5solidbarrels
+id: b5solidbarrels_social
+theme: b5solidbarrels
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:320a1bb8-f45d-4c10-8b75-4039770c17ba'
+settings:
+  id: 'block_content:320a1bb8-f45d-4c10-8b75-4039770c17ba'
+  label: Social
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

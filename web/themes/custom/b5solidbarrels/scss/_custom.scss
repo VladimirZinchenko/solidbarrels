@@ -78,3 +78,23 @@
 		}
 	}
 }
+
+// Footer
+footer.footer-dark {
+	a img {
+		filter: invert(1);
+	}
+}
+footer .region-footer {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+// Back top
+#backtotop {
+	height: 50px;
+	width: 50px;
+}
