@@ -1,11 +1,13 @@
 // Custom sccs.
 
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .img-cover img, img.img-cover {
 	object-fit: cover;
 	object-position: center center;
 	transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
 	height: 300px;
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-up(md) {
 		height: 100%;
 	}
 }
@@ -27,6 +29,7 @@
 	}
 }
 
+// Parallax
 .parallax {
 	background-attachment: fixed;
 	position: relative;
@@ -60,8 +63,7 @@
 		}
 	}
 }
-.parallax-caption-content,
-.parallax-description-content {
+.parallax-caption-content, .parallax-description-content {
 	@include media-breakpoint-up(lg) {
 		width: 100%;
 		max-width: 70%;
@@ -99,4 +101,12 @@ footer .region-footer {
 #backtotop {
 	height: 50px;
 	width: 50px;
+}
+
+// Paragraphs
+.paragraph--type--chessboard .field--name-field-text {
+	font-size: large;
+	a {
+		text-decoration: none;
+	}
 }
