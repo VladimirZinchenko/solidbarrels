@@ -104,9 +104,16 @@ footer .region-footer {
 }
 
 // Paragraphs
-.paragraph--type--chessboard .field--name-field-text {
+.page-node-type-basic .paragraph--type--chessboard .field--name-field-text {
 	font-size: large;
 	a {
 		text-decoration: none;
+	}
+}
+
+.side-heading {
+	@include media-breakpoint-up(md) {
+		transform: rotate(180deg);
+		writing-mode: vertical-lr;
 	}
 }

@@ -10,7 +10,7 @@ _core:
 id: block_content
 label: 'Блоки вмісту'
 module: views
-description: 'Find and manage content blocks.'
+description: 'Пошук блоків вмісту і керування ними.'
 tag: default
 base_table: block_content_field_data
 base_field: id

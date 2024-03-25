@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.chessboard.field_image
     - field.field.paragraph.chessboard.field_imgposition
     - field.field.paragraph.chessboard.field_text
-    - image.style.pc680
     - paragraphs.paragraphs_type.chessboard
   module:
     - image
@@ -30,7 +29,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: pc680
+      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
