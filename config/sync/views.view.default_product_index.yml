@@ -1,0 +1,222 @@
+uuid: 1333f3b3-3924-4f39-93ff-d309e8b3d7fd
+langcode: uk
+status: true
+dependencies:
+  config:
+    - search_api.index.default_index
+    - views.view.term_description
+  module:
+    - search_api
+    - views_bootstrap
+id: default_product_index
+label: 'Default product index'
+module: views
+description: 'Індекс товарів'
+tag: ''
+base_table: search_api_index_default_index
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Default product index'
+      fields:
+        rendered_item:
+          id: rendered_item
+          table: search_api_index_default_index
+          field: rendered_item
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 12
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Перша'
+            last: 'Остання »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Елементів на сторінку'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Усе -'
+            offset: false
+            offset_label: Зміщення
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Застосувати
+          reset_button: false
+          reset_button_label: Скинути
+          exposed_sorts_label: 'Впорядкувати за'
+          expose_sort_order: true
+          sort_asc_label: Зрост
+          sort_desc_label: Спад
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: search_api_none
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments:
+        search_api_all_terms:
+          id: search_api_all_terms
+          table: search_api_index_default_index
+          field: search_api_all_terms
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_all_terms
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.search_api_all_terms }}'
+          default_argument_type: taxonomy_tid
+          default_argument_options:
+            term_page: '1'
+            node: true
+            limit: true
+            vids: {  }
+            anyall: +
+          summary_options: {  }
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      filters: {  }
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: mb-3
+          default_row_class: false
+          uses_fields: false
+          col_xs: none
+          col_sm: none
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: col-xl-3
+          col_xxl: none
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:commerce_product':
+              default: teaser
+      query:
+        type: search_api_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+          query_tags: {  }
+      relationships: {  }
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'term_description:block_1'
+          inherit_arguments: true
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags:
+        - 'config:search_api.index.default_index'
+        - 'search_api_list:default_index'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: taxonomy/term/%
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags:
+        - 'config:search_api.index.default_index'
+        - 'search_api_list:default_index'

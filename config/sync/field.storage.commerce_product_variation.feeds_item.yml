@@ -1,0 +1,20 @@
+uuid: ff18999b-dbf0-49cc-ac1b-0918060a18b5
+langcode: uk
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - feeds
+id: commerce_product_variation.feeds_item
+field_name: feeds_item
+entity_type: commerce_product_variation
+type: feeds_item
+settings:
+  target_type: feeds_feed
+module: feeds
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

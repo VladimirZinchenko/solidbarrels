@@ -1,0 +1,25 @@
+uuid: 9694badc-04a5-4bf7-9697-c7b8414a5578
+langcode: uk
+status: true
+dependencies:
+  config:
+    - facets.facet.casktype
+  module:
+    - block_id
+    - facets
+  theme:
+    - b5solidbarrels
+id: b5solidbarrels_casktype
+theme: b5solidbarrels
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:casktype'
+settings:
+  id: 'facet_block:casktype'
+  label: 'Cask type'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: b5solidbarrels_casktype
+visibility: {  }

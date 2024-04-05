@@ -1,0 +1,11 @@
+uuid: 98994239-6880-4857-94c0-d5ea6ea89a99
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.exdrink
+id: taxonomy_term.exdrink
+target_entity_type_id: taxonomy_term
+target_bundle: exdrink
+default_langcode: site_default
+language_alterable: false

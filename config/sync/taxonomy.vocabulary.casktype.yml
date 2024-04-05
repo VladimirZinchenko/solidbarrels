@@ -1,0 +1,8 @@
+uuid: bd7b2cae-b692-40fe-b4c0-75f5d787d907
+langcode: uk
+status: true
+dependencies: {  }
+name: 'Cask type'
+vid: casktype
+description: 'Тип бочки'
+weight: 0

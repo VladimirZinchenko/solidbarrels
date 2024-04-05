@@ -1,0 +1,11 @@
+uuid: 33cfbdd9-19cf-4ac4-a8d6-98bee2e09b62
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.producer
+id: taxonomy_term.producer
+target_entity_type_id: taxonomy_term
+target_bundle: producer
+default_langcode: site_default
+language_alterable: false

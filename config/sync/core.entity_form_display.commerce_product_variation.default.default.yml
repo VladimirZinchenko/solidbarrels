@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
-    - field.field.commerce_product_variation.default.attribute_demensions
+    - field.field.commerce_product_variation.default.feeds_item
   module:
     - commerce_price
 _core:
@@ -14,12 +14,6 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
-  attribute_demensions:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2
@@ -64,4 +58,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  feeds_item: true
   uid: true

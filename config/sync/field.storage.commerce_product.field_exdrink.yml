@@ -1,0 +1,20 @@
+uuid: d83a695b-adc0-4680-9bd1-b54f6ae07cb8
+langcode: uk
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+id: commerce_product.field_exdrink
+field_name: field_exdrink
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

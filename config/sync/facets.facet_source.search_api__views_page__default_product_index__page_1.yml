@@ -1,0 +1,12 @@
+uuid: a346b21d-479f-40f1-b950-65c70c5a0879
+langcode: uk
+status: true
+dependencies: {  }
+id: search_api__views_page__default_product_index__page_1
+name: 'search_api:views_page__default_product_index__page_1'
+filter_key: key
+url_processor: query_string
+breadcrumb:
+  active: true
+  before: false
+  group: false

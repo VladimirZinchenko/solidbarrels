@@ -1,0 +1,11 @@
+uuid: bd57cda6-a368-4965-87b4-7dadfff9b13e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.casktype
+id: taxonomy_term.casktype
+target_entity_type_id: taxonomy_term
+target_bundle: casktype
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+uuid: 8098dce1-4132-48ac-b327-e347a508d303
+langcode: uk
+status: true
+dependencies: {  }
+name: 'Wood type'
+vid: woodtype
+description: 'Матеріал, з якого вироблена бочка'
+weight: 0

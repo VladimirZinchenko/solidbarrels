@@ -5,8 +5,19 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.feeds_item
+    - field.field.commerce_product.default.field_casktype
+    - field.field.commerce_product.default.field_category
+    - field.field.commerce_product.default.field_code
+    - field.field.commerce_product.default.field_condition
+    - field.field.commerce_product.default.field_exdrink
+    - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_producer
+    - field.field.commerce_product.default.field_woodtype
+    - image.style.large
   module:
     - commerce_product
+    - image
     - text
 _core:
   default_config_hash: 10qgl6V_HwkrJufzsNCV75OpqOeMzzKDJb3BhaogmzQ
@@ -20,7 +31,74 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
+    region: content
+  field_casktype:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_code:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_condition:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_exdrink:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_producer:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_woodtype:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
     region: content
   title:
     type: string
@@ -28,7 +106,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 0
     region: content
   variations:
     type: commerce_add_to_cart
@@ -36,10 +114,12 @@ content:
     settings:
       combine: true
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
 hidden:
   created: true
+  feeds_item: true
   langcode: true
+  search_api_excerpt: true
   stores: true
   uid: true

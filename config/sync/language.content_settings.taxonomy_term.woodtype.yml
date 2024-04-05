@@ -1,0 +1,11 @@
+uuid: b55f40a7-1278-4192-8fe4-463f84eb6876
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.woodtype
+id: taxonomy_term.woodtype
+target_entity_type_id: taxonomy_term
+target_bundle: woodtype
+default_langcode: site_default
+language_alterable: false

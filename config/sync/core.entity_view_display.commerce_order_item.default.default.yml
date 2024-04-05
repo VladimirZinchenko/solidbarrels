@@ -48,9 +48,9 @@ content:
     type: number_decimal
     label: above
     settings:
-      thousand_separator: ''
+      thousand_separator: "\t"
       decimal_separator: .
-      scale: 2
+      scale: 0
       prefix_suffix: true
     third_party_settings: {  }
     weight: 1
@@ -59,7 +59,7 @@ content:
     type: commerce_price_default
     label: above
     settings:
-      strip_trailing_zeroes: false
+      strip_trailing_zeroes: true
       currency_display: symbol
     third_party_settings: {  }
     weight: 3
@@ -68,7 +68,7 @@ content:
     type: commerce_price_default
     label: above
     settings:
-      strip_trailing_zeroes: false
+      strip_trailing_zeroes: true
       currency_display: symbol
     third_party_settings: {  }
     weight: 2

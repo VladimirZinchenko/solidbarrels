@@ -18,6 +18,7 @@ module:
   commerce: 0
   commerce_cart: 0
   commerce_checkout: 0
+  commerce_feeds: 0
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_price: 0
@@ -35,6 +36,9 @@ module:
   editor: 0
   entity: 0
   entity_reference_revisions: 0
+  facets: 0
+  feeds: 0
+  feeds_tamper: 0
   field: 0
   field_ui: 0
   file: 0
@@ -59,10 +63,14 @@ module:
   profile: 0
   quick_node_clone: 0
   search: 0
+  search_api: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
   semanticviews: 0
   shortcut: 0
   state_machine: 0
   system: 0
+  tamper: 0
   taxonomy: 0
   text: 0
   token: 0

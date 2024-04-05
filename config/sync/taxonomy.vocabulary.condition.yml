@@ -1,0 +1,8 @@
+uuid: b5bf5a42-9ae8-46ae-812e-4a4a88041835
+langcode: uk
+status: true
+dependencies: {  }
+name: Condition
+vid: condition
+description: 'Кондиція товару'
+weight: 0

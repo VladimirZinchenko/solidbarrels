@@ -1,0 +1,8 @@
+uuid: 7fd595cd-7bdb-4179-977d-462976bf7b61
+langcode: uk
+status: true
+dependencies: {  }
+name: 'Former drink'
+vid: exdrink
+description: 'Напій, що попередньо витримувався у бочці'
+weight: 0

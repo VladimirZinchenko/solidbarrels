@@ -1,0 +1,9 @@
+uuid: 22a55114-e79f-4428-9a00-390d04a1e5a5
+langcode: uk
+status: true
+dependencies: {  }
+id: search_api__views_page__search_content__page_1
+name: 'search_api:views_page__search_content__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

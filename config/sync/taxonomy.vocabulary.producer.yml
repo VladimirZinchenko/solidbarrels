@@ -1,0 +1,8 @@
+uuid: 40df2bb3-6524-4b80-ad49-bbb0ce9f24d8
+langcode: uk
+status: true
+dependencies: {  }
+name: Producer
+vid: producer
+description: 'Виробник товару'
+weight: 0

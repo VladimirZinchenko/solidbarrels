@@ -1,0 +1,29 @@
+uuid: 1ef8d7b3-c682-48db-9650-b5f8fe3d3b28
+langcode: uk
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_exdrink
+    - taxonomy.vocabulary.exdrink
+id: commerce_product.default.field_exdrink
+field_name: field_exdrink
+entity_type: commerce_product
+bundle: default
+label: 'Former drink'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      exdrink: exdrink
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

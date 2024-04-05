@@ -1,0 +1,8 @@
+uuid: 0222ab84-ce66-43a3-a3f1-1950aa3475d4
+langcode: uk
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Категорія товару'
+weight: 0

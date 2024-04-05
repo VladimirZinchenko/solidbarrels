@@ -1,0 +1,29 @@
+uuid: c463bcd5-ca2a-4a67-b0d8-3f14b83d4863
+langcode: uk
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_producer
+    - taxonomy.vocabulary.producer
+id: commerce_product.default.field_producer
+field_name: field_producer
+entity_type: commerce_product
+bundle: default
+label: Producer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      producer: producer
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
