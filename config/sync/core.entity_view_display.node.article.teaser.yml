@@ -47,7 +47,9 @@ content:
     weight: 2
     region: content
 hidden:
+  breadcrumbs: true
   comment: true
   field_paragraph: true
   field_tags: true
   langcode: true
+  search_api_excerpt: true

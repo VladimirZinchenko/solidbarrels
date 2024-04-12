@@ -1,4 +1,4 @@
-uuid: 40432930-87a8-46d0-a8b0-9c19d4352723
+uuid: 3dc96957-5c04-4491-8a72-fdbf51e8cda3
 langcode: uk
 status: true
 dependencies:
@@ -7,15 +7,15 @@ dependencies:
     - views.view.default_product_index
   module:
     - search_api
-id: casktype
-name: 'Cask type'
+id: woodtype
+name: 'Wood type'
 weight: 0
 min_count: 1
 missing: false
 missing_label: others
-url_alias: casktype
+url_alias: woodtype
 facet_source_id: 'search_api:views_page__default_product_index__page_1'
-field_identifier: field_casktype
+field_identifier: field_woodtype
 query_operator: and
 hard_limit: 0
 exclude: false

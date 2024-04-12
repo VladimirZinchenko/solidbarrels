@@ -1,20 +1,22 @@
-uuid: 1333f3b3-3924-4f39-93ff-d309e8b3d7fd
+uuid: 36c5ad96-b187-42a6-8d5d-6a314def688a
 langcode: uk
 status: true
 dependencies:
   config:
-    - search_api.index.default_index
-    - views.view.term_description
+    - core.entity_view_mode.node.teaser
+    - node.type.article
+    - system.menu.main
   module:
-    - search_api
+    - node
+    - user
     - views_bootstrap
-id: default_product_index
-label: 'Default product index'
+id: blog
+label: Блоґ
 module: views
-description: 'Індекс товарів'
+description: 'Матеріали (Статті) Блогу'
 tag: ''
-base_table: search_api_index_default_index
-base_field: search_api_id
+base_table: node_field_data
+base_field: nid
 display:
   default:
     id: default
@@ -22,18 +24,16 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Default product index'
+      title: Блоґ
       fields:
-        rendered_item:
-          id: rendered_item
-          table: search_api_index_default_index
-          field: rendered_item
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -75,10 +75,20 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          link_to_item: false
-          use_highlighting: false
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
           multi_type: separator
-          multi_separator: ', '
+          separator: ', '
+          field_api_classes: false
       pager:
         type: full
         options:
@@ -111,116 +121,135 @@ display:
           sort_asc_label: Зрост
           sort_desc_label: Спад
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
-        type: search_api_none
+        type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
-      arguments:
-        search_api_all_terms:
-          id: search_api_all_terms
-          table: search_api_index_default_index
-          field: search_api_all_terms
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: search_api_all_terms
-          default_action: default
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: true
-          title: '{{ arguments.search_api_all_terms }}'
-          default_argument_type: taxonomy_tid
-          default_argument_options:
-            term_page: '1'
-            node: true
-            limit: true
-            vids: {  }
-            anyall: +
-          summary_options: {  }
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: true
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          not: false
-      filters: {  }
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            article: article
       style:
         type: views_bootstrap_grid
         options:
-          row_class: mb-3
+          row_class: ''
           default_row_class: false
           uses_fields: false
           col_xs: none
           col_sm: none
           col_md: col-md-6
           col_lg: col-lg-4
-          col_xl: col-xl-3
+          col_xl: none
           col_xxl: none
       row:
-        type: search_api
+        type: 'entity:node'
         options:
-          view_modes:
-            'entity:commerce_product':
-              default: teaser
+          relationship: none
+          view_mode: teaser
       query:
-        type: search_api_query
+        type: views_query
         options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: view
-          empty: false
-          view_to_insert: 'term_description:block_1'
-          inherit_arguments: true
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-      tags:
-        - 'config:search_api.index.default_index'
-        - 'search_api_list:default_index'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
+      defaults:
+        pager: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   page_1:
     id: page_1
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
-      cache:
-        type: search_api_none
-      defaults:
-        cache: false
       display_extenders: {  }
-      path: taxonomy/term/%
+      path: blog
+      menu:
+        type: normal
+        title: Блоґ
+        description: ''
+        weight: -48
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-      tags:
-        - 'config:search_api.index.default_index'
-        - 'search_api_list:default_index'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

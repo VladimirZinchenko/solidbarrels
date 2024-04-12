@@ -1,0 +1,15 @@
+uuid: 83c1ea27-342d-4465-8bcc-f33df70933b5
+langcode: uk
+status: true
+dependencies: {  }
+id: article_path
+label: 'Article path'
+description: ''
+entityType: node
+entityBundle: article
+language: und
+breadcrumbPaths: /blog
+breadcrumbTitles: Блоґ
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

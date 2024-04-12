@@ -1,0 +1,31 @@
+uuid: e38a5f29-8454-4832-b254-092028daa0ee
+langcode: uk
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.facets_summary
+  module:
+    - facets_summary
+    - taxonomy
+  theme:
+    - b5solidbarrels
+id: b5solidbarrels_facetssummary
+theme: b5solidbarrels
+region: breadcrumb
+weight: -7
+provider: null
+plugin: 'facets_summary_block:facets_summary'
+settings:
+  id: 'facets_summary_block:facets_summary'
+  label: 'Facets summary'
+  label_display: '0'
+  provider: facets_summary
+  context_mapping: {  }
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: true
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      tags: tags

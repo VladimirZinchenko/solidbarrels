@@ -1,0 +1,15 @@
+uuid: 7cb84da1-2466-4132-862e-9b8065421c14
+langcode: uk
+status: true
+dependencies: {  }
+id: taxonomy_term_path
+label: 'Taxonomy term path'
+description: ''
+entityType: taxonomy_term
+entityBundle: category
+language: und
+breadcrumbPaths: '<nolink>'
+breadcrumbTitles: '[current-page:title]'
+type: '1'
+pathPattern: '/taxonomy/term/*'
+extraCacheContexts: ''

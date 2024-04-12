@@ -1,0 +1,36 @@
+uuid: 6001fed6-0109-414f-90ea-6ebb0220eed4
+langcode: uk
+status: true
+dependencies:
+  module:
+    - block_id
+    - facets_block
+    - taxonomy
+  theme:
+    - b5solidbarrels
+id: b5solidbarrels_facetsblock
+theme: b5solidbarrels
+region: sidebar_first
+weight: -6
+provider: null
+plugin: facets_block
+settings:
+  id: facets_block
+  label: 'Facets Block'
+  label_display: '0'
+  provider: facets_block
+  show_title: true
+  exclude_empty_facets: true
+  hide_empty_block: true
+  facets_to_include:
+    - 'facet_block:casktype'
+    - 'facet_block:woodtype'
+  add_js_classes: false
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: true
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      tags: tags

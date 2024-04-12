@@ -1,0 +1,15 @@
+uuid: 3aa00130-f90f-4395-8b21-25cd7b1894a4
+langcode: uk
+status: true
+dependencies: {  }
+id: product_path
+label: 'Product path'
+description: ''
+entityType: commerce_product
+entityBundle: default
+language: und
+breadcrumbPaths: '/taxonomy/term/[commerce_product:field_category:entity:tid]'
+breadcrumbTitles: '[commerce_product:field_category:entity:name]'
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

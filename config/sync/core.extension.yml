@@ -27,22 +27,25 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  custom_breadcrumbs: 0
   custom_entity_id: 0
   custom_nid: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
-  easy_breadcrumb: 0
   editor: 0
   entity: 0
   entity_reference_revisions: 0
   facets: 0
+  facets_block: 0
+  facets_summary: 0
   feeds: 0
   feeds_tamper: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  fixteaserlinks: 0
   help: 0
   history: 0
   image: 0

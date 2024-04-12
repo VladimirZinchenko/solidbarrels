@@ -9,6 +9,7 @@ dependencies:
     - field.field.commerce_product.default.field_category
     - field.field.commerce_product.default.field_code
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_woodtype
   module:
     - commerce_feeds
     - commerce_product
@@ -117,6 +118,11 @@ custom_sources:
     label: 'Cask type'
     machine_name: cask_type
     type: csv
+  wood_type:
+    value: 'Wood type'
+    label: 'Wood type'
+    machine_name: wood_type
+    type: csv
 mappings:
   -
     target: stores
@@ -188,3 +194,12 @@ mappings:
       reference_by: name
       autocreate: 1
       autocreate_bundle: casktype
+  -
+    target: field_woodtype
+    map:
+      target_id: wood_type
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: woodtype

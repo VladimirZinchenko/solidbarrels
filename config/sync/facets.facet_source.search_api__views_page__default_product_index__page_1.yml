@@ -7,6 +7,6 @@ name: 'search_api:views_page__default_product_index__page_1'
 filter_key: key
 url_processor: query_string
 breadcrumb:
-  active: true
+  active: false
   before: false
   group: false

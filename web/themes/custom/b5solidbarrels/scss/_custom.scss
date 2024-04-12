@@ -14,6 +14,43 @@
 .img-cover .field--name-field-image {
 	height: inherit;
 }
+.region-breadcrumb {
+	overflow-x: auto;
+    white-space: nowrap;
+    display: block;
+	.breadcrumb {
+		float: left;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+//Facets
+
+.facet-block__title {
+	font-size: larger;
+}
+
+.facet-block,
+.block-facets-summary {
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.block-facets-summary {
+	ul {
+		padding-left: 0;
+		display: flex;
+		li {
+			margin-left: 0.5rem;
+		}
+	}
+}
 
 .card {
 	@include media-breakpoint-down(sm) {
