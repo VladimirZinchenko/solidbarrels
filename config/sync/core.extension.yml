@@ -29,7 +29,6 @@ module:
   contextual: 0
   custom_breadcrumbs: 0
   custom_entity_id: 0
-  custom_nid: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_meta_tags
     - field.field.node.article.field_paragraph
     - field.field.node.article.field_tags
     - image.style.thumbnail
@@ -45,7 +46,9 @@ content:
     weight: 2
     region: content
 hidden:
+  breadcrumbs: true
   comment: true
+  field_meta_tags: true
   field_paragraph: true
   field_tags: true
   langcode: true

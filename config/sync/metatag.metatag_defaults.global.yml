@@ -8,4 +8,5 @@ id: global
 label: Глобальне
 tags:
   canonical_url: '[current-page:url]'
+  rights: '&copy;[current-date:html_year] [site:name]'
   title: '[current-page:title] | [site:name]'
