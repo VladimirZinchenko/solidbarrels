@@ -3,7 +3,6 @@ langcode: uk
 status: true
 dependencies:
   module:
-    - block_id
     - facets_block
     - taxonomy
   theme:
