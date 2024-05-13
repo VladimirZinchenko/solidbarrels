@@ -3,6 +3,7 @@ langcode: uk
 status: true
 dependencies:
   module:
+    - block_id
     - facets_block
     - taxonomy
   theme:
@@ -23,6 +24,8 @@ settings:
   hide_empty_block: true
   facets_to_include:
     - 'facet_block:casktype'
+    - 'facet_block:condition'
+    - 'facet_block:exdrink'
     - 'facet_block:woodtype'
   add_js_classes: false
 visibility:

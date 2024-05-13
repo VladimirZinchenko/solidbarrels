@@ -37,3 +37,15 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  condition:
+    checked: true
+    label: Condition
+    separator: ', '
+    show_count: false
+    weight: 0
+  exdrink:
+    checked: true
+    label: 'Former drink'
+    separator: ', '
+    show_count: false
+    weight: 0

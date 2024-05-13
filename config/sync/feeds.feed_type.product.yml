@@ -8,7 +8,10 @@ dependencies:
     - field.field.commerce_product.default.field_casktype
     - field.field.commerce_product.default.field_category
     - field.field.commerce_product.default.field_code
+    - field.field.commerce_product.default.field_condition
+    - field.field.commerce_product.default.field_exdrink
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_producer
     - field.field.commerce_product.default.field_woodtype
   module:
     - commerce_feeds
@@ -123,6 +126,21 @@ custom_sources:
     label: 'Wood type'
     machine_name: wood_type
     type: csv
+  producer:
+    value: Producer
+    label: Producer
+    machine_name: producer
+    type: csv
+  condition:
+    value: Condition
+    label: Condition
+    machine_name: condition
+    type: csv
+  former_drink:
+    value: 'Former drink'
+    label: 'Former drink'
+    machine_name: former_drink
+    type: csv
 mappings:
   -
     target: stores
@@ -203,3 +221,30 @@ mappings:
       reference_by: name
       autocreate: 1
       autocreate_bundle: woodtype
+  -
+    target: field_producer
+    map:
+      target_id: producer
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: producer
+  -
+    target: field_condition
+    map:
+      target_id: condition
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: condition
+  -
+    target: field_exdrink
+    map:
+      target_id: former_drink
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: exdrink
