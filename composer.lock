@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e35d2edbfcb293899d2e0ee88a52e446",
+    "content-hash": "c74c4dd7df59fd863b8cf4fa22211f5a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,16 +64,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "74c2dc687e124bfc4001e73e9346b33067e2ec2b"
+                "reference": "7794c268309a6fd7aeecfd1246a01238c14384c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/74c2dc687e124bfc4001e73e9346b33067e2ec2b",
-                "reference": "74c2dc687e124bfc4001e73e9346b33067e2ec2b",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/7794c268309a6fd7aeecfd1246a01238c14384c4",
+                "reference": "7794c268309a6fd7aeecfd1246a01238c14384c4",
                 "shasum": ""
             },
             "require": {
@@ -118,9 +118,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.5.0"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.6.0"
             },
-            "time": "2024-04-11T11:23:44+00:00"
+            "time": "2024-05-20T12:50:42+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -1600,17 +1600,17 @@
         },
         {
             "name": "drupal/bootstrap5",
-            "version": "3.0.11",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap5.git",
-                "reference": "3.0.11"
+                "reference": "4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap5-3.0.11.zip",
-                "reference": "3.0.11",
-                "shasum": "ea2ada76567d00cb84aa18904fd35e60dce716eb"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap5-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "4424a72b11cc7a571275b8f5590ffa3be807e4af"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10"
@@ -1618,8 +1618,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "3.0.11",
-                    "datestamp": "1711069787",
+                    "version": "4.0.0",
+                    "datestamp": "1716472361",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1699,7 +1699,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.39",
-                    "datestamp": "1715593688",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1814,7 +1814,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.39",
-                    "datestamp": "1715593688",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1858,7 +1858,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.39",
-                    "datestamp": "1715593688",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1901,7 +1901,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.39",
-                    "datestamp": "1715593688",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4101,17 +4101,17 @@
         },
         {
             "name": "drupal/views_bootstrap",
-            "version": "5.5.0-alpha1",
+            "version": "5.5.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bootstrap.git",
-                "reference": "5.5.0-alpha1"
+                "reference": "5.5.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-5.5.0-alpha1.zip",
-                "reference": "5.5.0-alpha1",
-                "shasum": "5f5f82dd33c01271c24f8feeac2a45dc49212cf3"
+                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-5.5.0-beta3.zip",
+                "reference": "5.5.0-beta3",
+                "shasum": "fabb6985a82ba0a7cc4add554d9e78d47a402be4"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -4119,11 +4119,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.5.0-alpha1",
-                    "datestamp": "1658954516",
+                    "version": "5.5.0-beta3",
+                    "datestamp": "1716389149",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },

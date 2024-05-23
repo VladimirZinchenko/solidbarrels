@@ -19,7 +19,7 @@
         "drupal/admin_toolbar": "^3.3",
         "drupal/back_to_top": "^3.0",
         "drupal/block_id": "^2.0",
-        "drupal/bootstrap5": "^3.0",
+        "drupal/bootstrap5": "^4.0",
         "drupal/commerce": "^2.37",
         "drupal/commerce_feeds": "^1.0@alpha",
         "drupal/core-composer-scaffold": "^10.2",
