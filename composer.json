@@ -29,7 +29,7 @@
         "drupal/custom_entity_id": "^1.0",
         "drupal/custom_nid": "^11.0",
         "drupal/easy_breadcrumb": "^2.0",
-        "drupal/facets": "^2.0",
+        "drupal/facets": "^3.0@beta",
         "drupal/facets_block": "^2.0",
         "drupal/feeds": "^3.0@beta",
         "drupal/feeds_tamper": "^2.0@beta",

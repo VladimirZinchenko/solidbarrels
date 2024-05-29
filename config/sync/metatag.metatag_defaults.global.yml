@@ -8,6 +8,7 @@ id: global
 label: Глобальне
 tags:
   canonical_url: '[current-page:url]'
+  google_site_verification: c4HIhQVLQA50vuxV2cRAbgaU5S562uNaC8wpE2A_vvc
   image_src: '[site:url]sites/default/files/default_images/media-image.jpg'
   og_site_name: '[site:name]'
   og_title: '[current-page:title]'

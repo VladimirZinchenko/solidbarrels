@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c74c4dd7df59fd863b8cf4fa22211f5a",
+    "content-hash": "90a6dc2505ce16dd9cb4d223f00a5f89",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2761,17 +2761,17 @@
         },
         {
             "name": "drupal/facets",
-            "version": "2.0.7",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "2.0.7"
+                "reference": "3.0.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facets-2.0.7.zip",
-                "reference": "2.0.7",
-                "shasum": "a58ad0c4c3fc2750bf095232a54218ae906852e3"
+                "url": "https://ftp.drupal.org/files/projects/facets-3.0.0-beta1.zip",
+                "reference": "3.0.0-beta1",
+                "shasum": "788ab7515e2e6aabd0e34c1ce54c29648c738b45"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10.0"
@@ -2785,17 +2785,18 @@
                 "drupal/search_api": "^1.28||1.x-dev"
             },
             "suggest": {
+                "drupal/better_exposed_filters": "Required for AJAX support for facets rendered as views exposed filters",
                 "drupal/jquery_ui_slider": "Required for the 'Facets Range Widget' module to work",
                 "drupal/jquery_ui_touch_punch": "Required for the 'Facets Range Widget' module to work"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.7",
-                    "datestamp": "1709900263",
+                    "version": "3.0.0-beta1",
+                    "datestamp": "1671208547",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -9175,6 +9176,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/commerce_feeds": 15,
+        "drupal/facets": 10,
         "drupal/feeds": 10,
         "drupal/feeds_tamper": 10,
         "drupal/inline_entity_form": 5,

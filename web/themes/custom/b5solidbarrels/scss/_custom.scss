@@ -32,6 +32,13 @@
 	font-size: larger;
 }
 
+.facets-widget-links ul li.facet-item label .facet-item__value {
+	text-decoration: none !important;
+    color: var(--bs-link-color) !important;
+    padding: 0.25rem;
+    display: block;
+}
+
 .facet-block,
 .block-facets-summary {
 	ul {
