@@ -12,7 +12,6 @@ dependencies:
     - contact
     - file
     - filter
-    - search
     - shortcut
     - system
 _core:
@@ -29,7 +28,6 @@ permissions:
   - 'access site-wide contact form'
   - 'delete own files'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view commerce_product'
