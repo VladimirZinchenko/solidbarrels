@@ -7,7 +7,7 @@ dependencies:
     - text
     - user
 id: term_description
-label: 'term description'
+label: 'Term description'
 module: views
 description: 'Опис терміну таксономії'
 tag: ''

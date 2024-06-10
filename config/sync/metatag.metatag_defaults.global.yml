@@ -10,6 +10,12 @@ tags:
   canonical_url: '[current-page:url]'
   google_site_verification: c4HIhQVLQA50vuxV2cRAbgaU5S562uNaC8wpE2A_vvc
   image_src: '[site:url]sites/default/files/default_images/media-image.jpg'
+  og_description: '[current-page:metatag:description]'
+  og_image: '[site:url]sites/default/files/default_images/media-image.jpg'
+  og_image_alt: 'Solid Barrels Concept'
+  og_image_height: '576'
+  og_image_type: mage/jpeg
+  og_image_width: '1024'
   og_site_name: '[site:name]'
   og_title: '[current-page:title]'
   og_type: website

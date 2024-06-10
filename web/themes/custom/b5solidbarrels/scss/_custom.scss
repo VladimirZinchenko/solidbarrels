@@ -1,7 +1,5 @@
 // Custom sccs.
 
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 .img-cover img, img.img-cover {
 	object-fit: cover;
 	object-position: center center;
@@ -20,9 +18,6 @@
     display: block;
 	.breadcrumb {
 		float: left;
-		a {
-			text-decoration: none;
-		}
 	}
 }
 
@@ -44,19 +39,17 @@
 	ul {
 		list-style: none;
 	}
-	a {
-		text-decoration: none;
-	}
 }
 
 .block-facets-summary {
-	ul {
-		padding-left: 0;
-		display: flex;
-		li {
-			margin-left: 0.5rem;
+	display: inline-block;
+		ul {
+			padding-left: 0;
+			display: flex;
+			li {
+				margin-left: 0.5rem;
+			}
 		}
-	}
 }
 
 .card {
@@ -149,9 +142,6 @@ footer .region-footer {
 // Paragraphs
 .page-node-type-basic .paragraph--type--chessboard .field--name-field-text {
 	font-size: large;
-	a {
-		text-decoration: none;
-	}
 }
 
 .side-heading {

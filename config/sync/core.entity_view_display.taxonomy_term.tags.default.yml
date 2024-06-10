@@ -1,22 +1,18 @@
-uuid: e98e7aec-355a-43ef-b064-ef390c7f6ae7
+uuid: a532da49-9913-4a2e-94b3-4bbc0e9dd6ca
 langcode: uk
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_meta_tags
-    - node.type.page
+    - field.field.taxonomy_term.tags.field_meta_tags
+    - taxonomy.vocabulary.tags
   module:
     - text
-    - user
-_core:
-  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
-id: node.page.default
-targetEntityType: node
-bundle: page
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
 mode: default
 content:
-  body:
+  description:
     type: text_default
     label: hidden
     settings: {  }
@@ -27,5 +23,4 @@ hidden:
   breadcrumbs: true
   field_meta_tags: true
   langcode: true
-  links: true
   search_api_excerpt: true

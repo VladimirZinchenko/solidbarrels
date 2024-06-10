@@ -1,22 +1,22 @@
-uuid: 19d5f62c-5dc5-41a3-b9f1-e5739349725b
+uuid: 905e20a3-127b-452a-bdd9-b0dfca183909
 langcode: uk
 status: true
 dependencies:
   config:
-    - views.view.blog
+    - views.view.frontpage_block
   module:
     - system
     - views
   theme:
     - b5solidbarrels
-id: b5solidbarrels_views_block__blog_block_1
+id: b5solidbarrels_views_block__frontpage_block_block_1
 theme: b5solidbarrels
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:blog-block_1'
+plugin: 'views_block:frontpage_block-block_1'
 settings:
-  id: 'views_block:blog-block_1'
+  id: 'views_block:frontpage_block-block_1'
   label: ''
   label_display: visible
   provider: views

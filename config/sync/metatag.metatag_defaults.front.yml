@@ -8,4 +8,5 @@ id: front
 label: 'Головна сторінка'
 tags:
   canonical_url: '[site:url]'
+  description: 'Рішення у галузі витримки алкогольних напоїв'
   shortlink: '[site:url]'

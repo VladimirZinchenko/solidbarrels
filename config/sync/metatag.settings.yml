@@ -5,9 +5,8 @@ entity_type_groups:
   node:
     article:
       basic: basic
-      open_graph: open_graph
     basic:
-      basic: basic
+      advanced: advanced
     page:
       advanced: advanced
   taxonomy_term:

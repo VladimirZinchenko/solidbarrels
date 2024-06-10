@@ -1,19 +1,23 @@
-uuid: 54001214-7fd9-4874-bd5e-59f7689b7264
+uuid: 43fe4a65-ca27-4e49-9130-82912093c60e
 langcode: uk
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:cb4774bb-e88c-44d9-996d-7017801d3364'
   module:
     - node
+    - taxonomy
     - user
+    - views_bootstrap
 _core:
-  default_config_hash: 6eeliKIydPjqyv5V__QqTfahvJMWkHjOVUUuUIdB1ik
-id: frontpage
-label: 'Головна сторінка'
-module: node
-description: 'Всі матеріали винесені на головну сторінку.'
+  default_config_hash: z9csC6m3M65M2JczdNul_lMUrVg8ZO66pbSq8jPCBKs
+id: taxonomy_term_custom
+label: 'Термін таксономії (custom)'
+module: taxonomy
+description: 'Матеріали, що стосуються термінів таксономії певних словників.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -24,18 +28,17 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ''
       fields: {  }
       pager:
         type: full
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 12
           total_pages: 0
           id: 0
           tags:
-            next: 'Наступна ›'
-            previous: '‹ Попередня'
+            next: ››
+            previous: ‹‹
             first: '« Перша'
             last: 'Остання »'
           expose:
@@ -64,52 +67,16 @@ display:
       cache:
         type: tag
         options: {  }
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          label: ''
-          empty: true
-          content: 'Вміст головної сторінки ще не створено.<br />Щоб розпочати створення сайту перегляньте <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Посібник користувача</a>.'
-          tokenize: false
-        node_listing_empty:
-          id: node_listing_empty
-          table: node
-          field: node_listing_empty
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: node_listing_empty
-          label: ''
-          empty: true
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: title
-          label: ''
-          empty: true
-          title: Вітаємо!
+      empty: {  }
       sorts:
         sticky:
           id: sticky
-          table: node_field_data
+          table: taxonomy_index
           field: sticky
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: sticky
-          plugin_id: boolean
+          plugin_id: standard
           order: DESC
           expose:
             label: ''
@@ -117,13 +84,11 @@ display:
           exposed: false
         created:
           id: created
-          table: node_field_data
+          table: taxonomy_index
           field: created
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
           plugin_id: date
           order: DESC
           expose:
@@ -131,61 +96,49 @@ display:
             field_identifier: created
           exposed: false
           granularity: second
-      arguments: {  }
-      filters:
-        promote:
-          id: promote
-          table: node_field_data
-          field: promote
+      arguments:
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: promote
-          plugin_id: boolean
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
+          plugin_id: taxonomy_index_tid
+          default_action: 'not found'
+          exception:
+            value: ''
+            title_enable: false
+            title: Все
+          title_enable: true
+          title: '{{ arguments.tid }}'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:taxonomy_term'
+            fail: 'not found'
+          validate_options:
+            bundles:
+              tags: tags
+            access: true
+            operation: view
+            multiple: 0
+          break_phrase: false
+          add_table: false
+          require_value: false
+          reduce_duplicates: false
+      filters:
         langcode:
           id: langcode
           table: node_field_data
@@ -228,13 +181,103 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        status:
+          id: status
+          table: taxonomy_index
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: 'not empty'
+          value:
+            2: 2
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tags
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: mb-3
+          default_row_class: false
           uses_fields: false
+          grid_class: ''
+          col_xs: none
+          col_sm: none
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: none
+          col_xxl: none
       row:
         type: 'entity:node'
         options:
@@ -248,6 +291,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      link_display: page_1
+      link_url: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -255,42 +300,8 @@ display:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  feed_1:
-    id: feed_1
-    display_title: Канал
-    display_plugin: feed
-    position: 2
-    display_options:
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 10
-      style:
-        type: rss
-        options:
-          grouping: {  }
-          uses_fields: false
-          description: ''
-      row:
-        type: node_rss
-        options:
-          relationship: none
-          view_mode: rss
-      display_extenders: {  }
-      path: rss.xml
-      sitename_title: true
-      displays:
-        page_1: page_1
-        default: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -300,12 +311,19 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: node
+      query:
+        type: views_query
+        options: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: taxonomy/term/%
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions

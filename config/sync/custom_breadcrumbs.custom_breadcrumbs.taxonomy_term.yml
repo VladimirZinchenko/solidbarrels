@@ -1,0 +1,15 @@
+uuid: 1f2f0e06-bc66-4ee0-843a-93af72c6ffc4
+langcode: uk
+status: true
+dependencies: {  }
+id: taxonomy_term
+label: 'Taxonomy term'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: "/category/casks\r\n<nolink>"
+breadcrumbTitles: "Casks\r\n[current-page:title]"
+type: '2'
+pathPattern: "/woodtype/*\r\n/casktype/*\r\n/condition/*\r\n/exdrink/*"
+extraCacheContexts: ''

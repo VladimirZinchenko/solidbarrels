@@ -1,9 +1,9 @@
-uuid: 7cb84da1-2466-4132-862e-9b8065421c14
+uuid: 7130ef93-ddd0-45a9-954d-f242ae545500
 langcode: uk
 status: true
 dependencies: {  }
-id: taxonomy_term_path
-label: 'Taxonomy term path'
+id: category
+label: Category
 description: ''
 entityType: taxonomy_term
 entityBundle: category
@@ -11,5 +11,5 @@ language: und
 breadcrumbPaths: '<nolink>'
 breadcrumbTitles: '[current-page:title]'
 type: '1'
-pathPattern: '/taxonomy/term/*'
+pathPattern: '/category/*'
 extraCacheContexts: ''
