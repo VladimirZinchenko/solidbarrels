@@ -1,10 +1,11 @@
-uuid: 08345063-be33-47e4-a99c-837e79e95c3f
+uuid: a8e346bf-d21b-4e67-8817-44ec8e985f60
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_caption
     - field.storage.paragraph.field_image
+    - node.type.basic
     - paragraphs.paragraphs_type.parallax
   module:
     - bg_image_formatter
@@ -16,10 +17,10 @@ dependencies:
 id: default_basic_image
 label: 'Default Basic Image'
 module: views
-description: 'Display Image in default mode.'
+description: 'Display Parallax Paragrapg Image on Node Page'
 tag: ''
-base_table: paragraphs_item_field_data
-base_field: id
+base_table: node_field_data
+base_field: nid
 display:
   default:
     id: default
@@ -27,13 +28,75 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ''
+      title: 'Default Basic Image'
       fields:
+        field_caption:
+          id: field_caption
+          table: paragraph__field_caption
+          field: field_caption
+          relationship: field_paragraph
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_image:
           id: field_image
           table: paragraph__field_image
           field: field_image
-          relationship: none
+          relationship: field_paragraph
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -97,68 +160,6 @@ display:
               bg_image_path_format: relative
               bg_image_gradient: ''
           group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_caption:
-          id: field_caption
-          table: paragraph__field_caption
-          field: field_caption
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -246,7 +247,7 @@ display:
           id: nid
           table: node_field_data
           field: nid
-          relationship: reverse__node__field_paragraph
+          relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
@@ -280,9 +281,9 @@ display:
       filters:
         status:
           id: status
-          table: paragraphs_item_field_data
+          table: node_field_data
           field: status
-          entity_type: paragraph
+          entity_type: node
           entity_field: status
           plugin_id: boolean
           value: '1'
@@ -291,26 +292,26 @@ display:
             operator: ''
         type:
           id: type
-          table: paragraphs_item_field_data
+          table: node_field_data
           field: type
-          entity_type: paragraph
+          entity_type: node
           entity_field: type
           plugin_id: bundle
           value:
-            parallax: parallax
-        langcode:
-          id: langcode
+            basic: basic
+        type_1:
+          id: type_1
           table: paragraphs_item_field_data
-          field: langcode
-          relationship: none
+          field: type
+          relationship: field_paragraph
           group_type: group
           admin_label: ''
           entity_type: paragraph
-          entity_field: langcode
-          plugin_id: language
+          entity_field: type
+          plugin_id: bundle
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            parallax: parallax
           group: 1
           exposed: false
           expose:
@@ -352,7 +353,7 @@ display:
             attributes: ''
           row:
             element_type: div
-            attributes: 'class|parallax mb-5'
+            attributes: 'class|parallax mb-1'
             last_every_nth: '0'
             first_class: first
             last_class: last
@@ -373,15 +374,14 @@ display:
           replica: false
           query_tags: {  }
       relationships:
-        reverse__node__field_paragraph:
-          id: reverse__node__field_paragraph
-          table: paragraphs_item_field_data
-          field: reverse__node__field_paragraph
+        field_paragraph:
+          id: field_paragraph
+          table: node__field_paragraph
+          field: field_paragraph
           relationship: none
           group_type: group
-          admin_label: field_paragraph
-          entity_type: paragraph
-          plugin_id: entity_reverse
+          admin_label: 'field_paragraph: Абзац'
+          plugin_id: standard
           required: false
       header: {  }
       footer: {  }
@@ -392,6 +392,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.paragraph.field_caption'
@@ -412,6 +413,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.paragraph.field_caption'

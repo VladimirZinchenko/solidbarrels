@@ -31,6 +31,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h3
           items_per_page: 12
           total_pages: 0
           id: 0
@@ -48,7 +49,6 @@ display:
             offset: false
             offset_label: Зміщення
           quantity: 9
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
