@@ -1,6 +1,5 @@
 _core:
   default_config_hash: 58nI4vVTGv677fB42ySkQN9iTenfZvvW-xJlXODHdV4
-langcode: uk
 minimum_lifetime: 0
 xsl: 0
 prefetch_aliases: 1

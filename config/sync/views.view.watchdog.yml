@@ -1,6 +1,6 @@
 uuid: f9de105f-662d-48c2-9781-d76f06284468
 langcode: uk
-status: true
+status: false
 dependencies:
   module:
     - dblog
@@ -440,6 +440,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0

@@ -6,3 +6,4 @@ name: 'Cask type'
 vid: casktype
 description: 'Тип бочки'
 weight: 0
+new_revision: false

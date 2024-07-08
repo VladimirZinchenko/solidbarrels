@@ -6,3 +6,4 @@ name: 'Wood type'
 vid: woodtype
 description: 'Матеріал, з якого вироблена бочка'
 weight: 0
+new_revision: false

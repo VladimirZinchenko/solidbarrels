@@ -50,16 +50,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_bgcolor','field_text','field_image','field_caption') }}
-<div class="parallax border-0 card" style="background-image: url({{file_url(content.field_image.0['#item'].entity.uri.value)}})">
-    <div class="parallax-caption">
-        <div class="container">
-            <div class="parallax-caption-content">
-                {{ content.field_caption }}
-            </div>
-        </div>
-    </div>
-</div>
+      {{ content|without('field_bgcolor','field_text') }}
 <div class="parallax-description border-0 card {{ content.field_bgcolor.0 }}">
     <div class="container">
         <div class="parallax-description-content">

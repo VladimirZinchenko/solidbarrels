@@ -6,3 +6,4 @@ name: Producer
 vid: producer
 description: 'Виробник товару'
 weight: 0
+new_revision: false

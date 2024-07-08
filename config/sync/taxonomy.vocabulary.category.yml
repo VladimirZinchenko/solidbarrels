@@ -6,3 +6,4 @@ name: Category
 vid: category
 description: 'Категорія товару'
 weight: 0
+new_revision: false

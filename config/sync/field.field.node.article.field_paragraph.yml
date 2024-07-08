@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraph
     - node.type.article
+    - paragraphs.paragraphs_type.chessboard
   module:
     - entity_reference_revisions
 id: node.article.field_paragraph
@@ -20,6 +21,14 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
-    negate: 1
+    target_bundles:
+      chessboard: chessboard
+    negate: 0
+    target_bundles_drag_drop:
+      chessboard:
+        weight: 3
+        enabled: true
+      parallax:
+        weight: 4
+        enabled: false
 field_type: entity_reference_revisions

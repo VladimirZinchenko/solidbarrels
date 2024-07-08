@@ -68,11 +68,11 @@
 
 // Parallax
 .parallax {
-	background-attachment: fixed;
+	/*background-attachment: fixed;
 	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 	height: 500px;
 	@include media-breakpoint-up(lg) {
 		height: 600px;
@@ -109,12 +109,21 @@
 	}
 }
 .parallax-description {
-	padding: ($spacer * 4) 0.75rem;
+	padding: ($spacer * 3) 0.75rem;
 	p, ul {
 		font-size: $h5-font-size;
 		@include media-breakpoint-up(lg) {
 			font-size: $h4-font-size;
 		}
+	}
+}
+
+//Default Article Image
+
+.article-image {
+	height: 400px;
+	@include media-breakpoint-up(lg) {
+		height: 600px;
 	}
 }
 
@@ -144,6 +153,7 @@ footer .region-footer {
 	font-size: large;
 }
 
+// Question
 .side-heading {
 	@include media-breakpoint-up(md) {
 		transform: rotate(180deg);

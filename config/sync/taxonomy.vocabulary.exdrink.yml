@@ -6,3 +6,4 @@ name: 'Former drink'
 vid: exdrink
 description: 'Напій, що попередньо витримувався у бочці'
 weight: 0
+new_revision: false

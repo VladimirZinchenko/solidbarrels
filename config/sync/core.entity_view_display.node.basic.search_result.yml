@@ -1,0 +1,29 @@
+uuid: 2075b9ad-106b-4192-b712-c29b29f8f2a6
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.basic.body
+    - field.field.node.basic.field_meta_tags
+    - field.field.node.basic.field_paragraph
+    - node.type.basic
+  module:
+    - user
+id: node.basic.search_result
+targetEntityType: node
+bundle: basic
+mode: search_result
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  breadcrumbs: true
+  field_meta_tags: true
+  field_paragraph: true
+  langcode: true
+  search_api_excerpt: true
