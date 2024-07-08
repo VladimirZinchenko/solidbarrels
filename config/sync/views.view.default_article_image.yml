@@ -308,7 +308,7 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      block_hide_empty: true
+      block_hide_empty: false
     cache_metadata:
       max-age: -1
       contexts:

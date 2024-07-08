@@ -12,6 +12,7 @@ dependencies:
     - paragraphs
     - semanticviews
     - text
+    - user
 id: default_basic_image
 label: 'Default Basic Image'
 module: views
@@ -93,7 +94,7 @@ display:
               bg_image_media_query: all
               bg_image_important: 0
               bg_image_background_size_ie8: 0
-              bg_image_path_format: absolute
+              bg_image_path_format: relative
               bg_image_gradient: ''
           group_column: ''
           group_columns: {  }
@@ -232,8 +233,9 @@ display:
           sort_asc_label: Зрост
           sort_desc_label: Спад
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -346,7 +348,7 @@ display:
             element_type: h3
             attributes: class|title
           list:
-            element_type: div
+            element_type: ''
             attributes: ''
           row:
             element_type: div
@@ -390,6 +392,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user.permissions
       tags:
         - 'config:field.storage.paragraph.field_caption'
         - 'config:field.storage.paragraph.field_image'
@@ -409,6 +412,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user.permissions
       tags:
         - 'config:field.storage.paragraph.field_caption'
         - 'config:field.storage.paragraph.field_image'
