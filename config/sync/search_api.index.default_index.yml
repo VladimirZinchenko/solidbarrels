@@ -12,7 +12,6 @@ dependencies:
     - search_api.server.default_server
   module:
     - commerce_product
-    - search_api
 _core:
   default_config_hash: 3aiqici40Ky7H7_FK6JBlEawsJtrD7MGX3dQh3xgqoc
 id: default_index
