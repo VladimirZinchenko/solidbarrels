@@ -53,7 +53,7 @@
         "drupal/views_bulk_edit": "^3.0",
         "drupal/views_bulk_operations": "^4.3@beta",
         "drupal/xmlsitemap": "^2.0@beta",
-        "drush/drush": "^12.4"
+        "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
