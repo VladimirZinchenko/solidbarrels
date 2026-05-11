@@ -1,3 +1,4 @@
+langcode: uk
 attributes:
   rel:
     label: Relation
@@ -6,7 +7,7 @@ attributes:
     label: Accesskey
     description: 'Set accesskey'
   target:
-    label: Target
+    label: 'Ціль посилання'
     description: 'Set target'
   class:
     label: Class
