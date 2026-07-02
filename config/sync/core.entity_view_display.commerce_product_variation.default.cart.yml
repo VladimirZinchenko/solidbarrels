@@ -37,8 +37,10 @@ content:
     weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   feeds_item: true
   langcode: true
   price: true
+  search_api_excerpt: true
   sku: true
   title: true

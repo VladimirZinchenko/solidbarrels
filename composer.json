@@ -49,6 +49,7 @@
         "drupal/tvi": "^2.0@alpha",
         "drupal/twbstools": "^2.1",
         "drupal/twig_tweak": "^3.2",
+        "drupal/upgrade_status": "^4.3",
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/views_bulk_edit": "^3.0",
         "drupal/views_bulk_operations": "^4.3@beta",
@@ -63,11 +64,12 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
+            "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
@@ -127,5 +129,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "10.6.12"
     }
 }
