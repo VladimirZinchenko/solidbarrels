@@ -49,6 +49,7 @@
         "drupal/tvi": "^2.0@alpha",
         "drupal/twbstools": "^2.1",
         "drupal/twig_tweak": "^3.2",
+        "drupal/upgrade_status": "^4.3",
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/views_bulk_edit": "^3.0",
         "drupal/views_bulk_operations": "^4.3@beta",
@@ -131,5 +132,6 @@
     },
     "require-dev": {
         "drupal/core-dev": "10.6.15"
+        "drupal/core-dev": "10.6.12"
     }
 }

@@ -12,7 +12,7 @@ label: Базово
 targetEntityType: commerce_order
 plugin: infinite
 configuration:
-  pattern: 'SB-[pattern:number]'
+  pattern: '[pattern:number]'
   initial_number: 1
   padding: 0
   per_store_sequence: true

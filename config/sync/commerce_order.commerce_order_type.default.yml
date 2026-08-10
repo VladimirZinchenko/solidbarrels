@@ -1,18 +1,7 @@
 uuid: 1ff2ff4b-eecb-47b7-bb35-7face3ee0162
 langcode: uk
 status: true
-dependencies:
-  module:
-    - commerce_cart
-    - commerce_checkout
-third_party_settings:
-  commerce_cart:
-    cart_block_view: commerce_cart_block
-    cart_form_view: commerce_cart_form
-    cart_expiration: {  }
-    enable_cart_message: true
-  commerce_checkout:
-    checkout_flow: default
+dependencies: {  }
 _core:
   default_config_hash: kYapI397yx2zFJGyDEs85Hyqgfc9jhmzxqPZMl2Fqhk
 id: default
@@ -20,7 +9,6 @@ label: Базово
 traits: {  }
 locked: false
 workflow: order_default
-showOrderEditLinks: true
 numberPattern: order_default
 refresh_mode: customer
 refresh_frequency: 300
