@@ -42,7 +42,7 @@
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",
         "drupal/quick_node_clone": "^1.17",
-        "drupal/scss_compiler": "^1.2",
+        "drupal/scss_compiler": "^2.0@alpha",
         "drupal/search_api": "^1.32",
         "drupal/semanticviews": "^3.0",
         "drupal/tamper": "^1.0@alpha",
@@ -63,11 +63,12 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
+            "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
@@ -127,5 +128,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "10.6.15"
     }
 }
