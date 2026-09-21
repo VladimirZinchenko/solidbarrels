@@ -19,7 +19,6 @@
         "drupal/admin_toolbar": "^3.3",
         "drupal/back_to_top": "^3.0",
         "drupal/bg_image_formatter": "^1.17",
-        "drupal/block_id": "^2.0",
         "drupal/bootstrap5": "^4.0",
         "drupal/commerce": "^3.0@beta",
         "drupal/commerce_feeds": "^1.0@alpha",
@@ -27,8 +26,6 @@
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/custom_breadcrumbs": "^1.1",
-        "drupal/custom_entity_id": "^1.0",
-        "drupal/custom_nid": "^11.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/facets": "^3.0@beta",
         "drupal/facets_block": "^2.0",
@@ -42,7 +39,6 @@
         "drupal/mysql57": "^1.0",
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",
-        "drupal/quick_node_clone": "^1.17",
         "drupal/scss_compiler": "^2.0@alpha",
         "drupal/search_api": "^1.32",
         "drupal/semanticviews": "^3.0",
@@ -132,7 +128,6 @@
         }
     },
     "require-dev": {
-        "drupal/core-dev": "10.6.15",
-        "drupal/core-dev": "10.6.12"
+        "drupal/core-dev": "10.6.17"
     }
 }

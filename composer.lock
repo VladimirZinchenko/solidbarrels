@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9826562bbd3a623c76f478b498a06064",
+    "content-hash": "bd9f80d881b7f1acd59919280470f496",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1540,54 +1540,6 @@
             }
         },
         {
-            "name": "drupal/block_id",
-            "version": "2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_id.git",
-                "reference": "2.0.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_id-2.0.6.zip",
-                "reference": "2.0.6",
-                "shasum": "f110f969bb156f33cd4066d8ada8709ac41eb384"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.6",
-                    "datestamp": "1755597580",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "heni_deepak",
-                    "homepage": "https://www.drupal.org/user/3605091"
-                },
-                {
-                    "name": "radheymkumar",
-                    "homepage": "https://www.drupal.org/user/3069081"
-                }
-            ],
-            "description": "Adds an additional field to set the ID & classes of a block.",
-            "homepage": "https://www.drupal.org/project/block_id",
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_id"
-            }
-        },
-        {
             "name": "drupal/bootstrap5",
             "version": "4.0.8",
             "source": {
@@ -2414,114 +2366,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/custom_breadcrumbs",
                 "issues": "https://www.drupal.org/project/issues/custom_breadcrumbs"
-            }
-        },
-        {
-            "name": "drupal/custom_entity_id",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/custom_entity_id.git",
-                "reference": "1.0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/custom_entity_id-1.0.3.zip",
-                "reference": "1.0.3",
-                "shasum": "cff0ae496081ba7c9c62697ffd55ea7fc8a5ef2e"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11 || ^12"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.3",
-                    "datestamp": "1788671003",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "deepesh151086",
-                    "homepage": "https://www.drupal.org/user/2865899"
-                },
-                {
-                    "name": "rajat4u",
-                    "homepage": "https://www.drupal.org/user/2500180"
-                }
-            ],
-            "description": "Provide custom entity id field on entity create page.",
-            "homepage": "https://www.drupal.org/project/custom_entity_id",
-            "support": {
-                "source": "https://git.drupalcode.org/project/custom_entity_id"
-            }
-        },
-        {
-            "name": "drupal/custom_nid",
-            "version": "11.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/custom_nid.git",
-                "reference": "11.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/custom_nid-11.0.0.zip",
-                "reference": "11.0.0",
-                "shasum": "dad6cddcfa03fec57c45d674d18a2dac6e7ceba8"
-            },
-            "require": {
-                "drupal/core": "^9.2 || ^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "11.0.0",
-                    "datestamp": "1712815347",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "deepesh151086",
-                    "homepage": "https://www.drupal.org/user/2865899"
-                },
-                {
-                    "name": "develop2015deepak",
-                    "homepage": "https://www.drupal.org/user/3398044"
-                },
-                {
-                    "name": "hitesh_bhargav",
-                    "homepage": "https://www.drupal.org/user/3174503"
-                },
-                {
-                    "name": "rajat4u",
-                    "homepage": "https://www.drupal.org/user/2500180"
-                },
-                {
-                    "name": "rajesh.vishwakarma",
-                    "homepage": "https://www.drupal.org/user/2158526"
-                }
-            ],
-            "description": "Provide custom nid field on node create page.",
-            "homepage": "https://www.drupal.org/project/custom_nid",
-            "support": {
-                "source": "https://git.drupalcode.org/project/custom_nid"
             }
         },
         {
@@ -3628,65 +3472,6 @@
             "homepage": "https://drupal.org/project/profile",
             "support": {
                 "source": "https://git.drupalcode.org/project/profile"
-            }
-        },
-        {
-            "name": "drupal/quick_node_clone",
-            "version": "1.22.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/quick_node_clone.git",
-                "reference": "8.x-1.22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quick_node_clone-8.x-1.22.zip",
-                "reference": "8.x-1.22",
-                "shasum": "39f3c80627803c0e1f5d342327b17c16a691cdec"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11"
-            },
-            "require-dev": {
-                "drupal/group": "^1 || ^2 || ^3",
-                "drupal/paragraphs": "1.x-dev"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.22",
-                    "datestamp": "1740238152",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "vilepickle",
-                    "homepage": "https://www.drupal.org/u/vilepickle",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "neslee canil pinto",
-                    "homepage": "https://www.drupal.org/user/3580850"
-                }
-            ],
-            "description": "Quickly clone a node with regular fields.",
-            "homepage": "https://www.drupal.org/project/quick_node_clone",
-            "support": {
-                "source": "https://git.drupalcode.org/project/quick_node_clone",
-                "issues": "https://www.drupal.org/project/issues/quick_node_clone"
             }
         },
         {
@@ -11205,7 +10990,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.6.12",
+            "version": "10.6.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -11255,7 +11040,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.6.12"
+                "source": "https://github.com/drupal/core-dev/tree/10.6.17"
             },
             "time": "2026-05-20T15:35:08+00:00"
         },
