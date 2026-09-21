@@ -18,10 +18,14 @@ module:
   commerce_cart: 0
   commerce_checkout: 0
   commerce_feeds: 0
+  commerce_log: 0
   commerce_number_pattern: 0
   commerce_order: 0
+  commerce_payment: 0
+  commerce_payment_example: 0
   commerce_price: 0
   commerce_product: 0
+  commerce_promotion: 0
   commerce_store: 0
   config: 0
   contact: 0
@@ -60,6 +64,7 @@ module:
   metatag_verification: 0
   metatag_views: 0
   mysql: 0
+  mysql57: 0
   node: 0
   options: 0
   page_cache: 0
@@ -82,7 +87,6 @@ module:
   twbstools: 0
   twig_tweak: 0
   update: 0
-  upgrade_status: 0
   user: 0
   views_bootstrap: 0
   views_bulk_edit: 0

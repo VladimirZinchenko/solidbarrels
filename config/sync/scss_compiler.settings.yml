@@ -7,5 +7,6 @@ flush_cache_type: system
 check_modify_time: 1
 node_modules_path: ''
 plugins:
-  scss: scss_compiler_scssphp
+  scss: scss_compiler_scssphp2
 langcode: uk
+precompile: 0
